@@ -8,7 +8,7 @@
    ].each { Map paramsEnv ->
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo") {
     
-    def repo = 'jenkinsci/pipeline-examples'       
+    def repo = 'https://github.com/jenkinsci/pipeline-examples'       
     definition {
         cpsScm {
             scm {

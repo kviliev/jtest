@@ -6,7 +6,7 @@
        [environment: 'dev', branch: 'master', project: 'dev-app-project'],
        [environment: 'qa', branch: 'master', project: 'qa-app-project'],  
    ].each { Map paramsEnv ->
-       pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo1") {
+       pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo2") {
             parameters{
                stringParam("Environment", "qa")
             }

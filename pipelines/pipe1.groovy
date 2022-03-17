@@ -8,7 +8,7 @@
    ].each { Map paramsEnv ->
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo1") {
             parameters{
-               stringParam("Environment", "dev")
+               stringParam("Environment", "qa")
             }
     
     def repo = 'https://github.com/jenkinsci/pipeline-examples'       

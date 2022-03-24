@@ -10,7 +10,7 @@
            parameters {
                choice(
                  name: 'ENV',
-                 choices: "dev\ntest")
+                 choices: "dev\ntest" )
             }
     
     def repo = 'https://github.com/jenkinsci/pipeline-examples'       

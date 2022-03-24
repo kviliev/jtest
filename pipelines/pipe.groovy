@@ -8,9 +8,10 @@
    ].each { Map paramsEnv ->
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo") {
            parameters {
-               choice(
-                 name: 'ENV',
-                 choices: "dev\ntest" )
+              choice(
+                  name: 'myParameter',
+                  choices: "Option1\nOption2",
+                  description: 'interesting stuff' )
             }
     
             def repo = 'https://github.com/jenkinsci/pipeline-examples'       

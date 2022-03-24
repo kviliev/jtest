@@ -10,7 +10,7 @@
             parameters {
             choice(
                      name: 'ENV',
-                     choices: ['dev', 'test']
+                     choices: "dev\ntest"
               )
             }
     

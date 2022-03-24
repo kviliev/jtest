@@ -9,9 +9,8 @@
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo") {
             parameters {
             choice(
-                     name: 'ENV',
-                     choices: "dev\ntest"
-              )
+                 name: 'ENV',
+                 choices: "dev\ntest")
             }
     
     def repo = 'https://github.com/jenkinsci/pipeline-examples'       

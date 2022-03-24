@@ -13,12 +13,12 @@
                  choices: "dev\ntest" )
             }
     
-    def repo = 'https://github.com/jenkinsci/pipeline-examples'       
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
+            def repo = 'https://github.com/jenkinsci/pipeline-examples'       
+            definition {
+              cpsScm {
+                 scm {
+                    git {
+                       remote {
                            url(repo)
                            //github('jenkinsci/pipeline-examples')
                         }

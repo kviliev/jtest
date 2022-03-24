@@ -7,8 +7,8 @@
        [environment: 'qa', branch: 'master', project: 'qa-app-project'],  
    ].each { Map paramsEnv ->
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo") {
-            parameters {
-            choice(
+           parameters {
+               choice(
                  name: 'ENV',
                  choices: "dev\ntest")
             }

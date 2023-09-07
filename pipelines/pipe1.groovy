@@ -2,8 +2,7 @@
      [region: 'UK'],
 
 ].each { Map params ->
-   [ 
-       [environment: 'dev', branch: 'master', project: 'dev-app-project'],
+   [
        [environment: 'qa', branch: 'master', project: 'qa-app-project'],  
    ].each { Map paramsEnv ->
        pipelineJob("${params.region}/${paramsEnv.environment}/${paramsEnv.project}/app-demo2") {

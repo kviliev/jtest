@@ -1,3 +1,4 @@
+branch1
 pipelineJob('github-demo1') {
     definition {
         cpsScm {
@@ -7,6 +8,17 @@ pipelineJob('github-demo1') {
                         github('kviliev/jtest1')
                     }
                 }
+=======
+pipeline {
+    agent any
+
+    stages {  
+        stage('Hello') {
+            steps {
+                script {
+                      echo 'Hello World1'
+                }    
+main
             }
             scriptPath('Jenkinsfile')
         }
